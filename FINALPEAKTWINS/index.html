@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="pecstyle.css">
     <link rel="icon" href="img/logotp.ico" type="image/x-icon">
     <link rel="shortcut icon" href="img/logotp.ico" type="image/x-icon">
- 
 </head>
 <body>
     <h1>
@@ -27,8 +26,9 @@
         </nav>
     </header>
 
+
     <div class="video-container">
-        <iframe src="https://www.youtube.com/embed/yFMaEIHIrGw" allowfullscreen></iframe>
+        <iframe data-src="https://www.youtube.com/embed/yFMaEIHIrGw" allowfullscreen></iframe>
     </div>
 
     <footer>
@@ -49,12 +49,13 @@
     </script>
     <script defer src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script defer src="https://unpkg.com/details-element-polyfill"></script>
-    <script type="module">
+    <script defer>
+    </script>
+   
+    <script type="module" defer>
         import(/* webpackChunkName: "pecjava" */ './pecjava.js').then(module => {
             console.log(module);
         }).catch(error => console.error('Error loading pecjava module:', error));
-    </script>
-    <script defer>
     </script>
 </body>
 </html>
